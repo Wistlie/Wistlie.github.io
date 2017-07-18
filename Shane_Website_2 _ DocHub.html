@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://dochub.com/mrfireworks2/JXlpeZ/shane_website_2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="fragment" content="!"> <script type="text/javascript" src="./Shane_Website_2 _ DocHub_files/494d88a3e9"></script><script src="./Shane_Website_2 _ DocHub_files/nr-1044.min.js.download"></script><script async="" src="./Shane_Website_2 _ DocHub_files/analytics.js.download"></script><script> window.prerenderReady = false; </script> <meta name="server_name" content="Caracal">  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"494d88a3e9","applicationID":"21025970","transactionName":"dQsNEBAMWwlTQklXQ0YICgcDF14KWB8PW0NZFhc7BgxUEFtVCEI=","queueTime":0,"applicationTime":49,"agent":""}</script> <script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script> <link rel="author" href="http://plus.google.com/"> <link rel="publisher" href="http://plus.google.com/"> <meta name="twitter:site" content="https://dochub.com"> <meta name="twitter:creator" content="dochubapp"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=1"> <link href="https://cdn.dochub.com/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"> <link rel="apple-touch-icon" href="https://dochub.com/favicon-64.png"> <link rel="icon" type="image/png" sizes="64x64" href="https://dochub.com/favicon-64.png"> <meta name="currentUserPayload" content="{&quot;user&quot;:{&quot;id&quot;:8261703,&quot;email&quot;:&quot;naruto.shane@gmail.com&quot;,&quot;slug&quot;:&quot;mrfireworks2&quot;,&quot;name&quot;:&quot;MrFireworks2&quot;,&quot;company_name&quot;:null,&quot;url&quot;:null,&quot;location&quot;:null,&quot;last_sign_in_at&quot;:&quot;2017-04-07T21:21:35.000-05:00&quot;,&quot;upload&quot;:&quot;https://s3.amazonaws.com/dh-img-user/8261703.jpg?1453248941&quot;,&quot;upload_updated_at&quot;:&quot;2016-01-19T18:15:41.000-06:00&quot;,&quot;updated_at&quot;:&quot;2017-07-16T05:21:24.000-05:00&quot;,&quot;created_at&quot;:&quot;2016-01-19T18:15:41.000-06:00&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;has_session_token&quot;:false,&quot;authentication_ids&quot;:[8232262],&quot;user_preference_ids&quot;:[],&quot;organization_role_ids&quot;:[],&quot;organization_ids&quot;:[],&quot;pro_subscription_id&quot;:null,&quot;site_license_pro_subscription_id&quot;:null,&quot;entity_id&quot;:&quot;mrfireworks2&quot;,&quot;fax_number_provision_id&quot;:null},&quot;authentications&quot;:[{&quot;id&quot;:8232262,&quot;provider&quot;:&quot;google_oauth2&quot;,&quot;uid&quot;:&quot;116490783491726469150&quot;,&quot;token&quot;:&quot;ya29.Gl2JBA1Z4M2Ky-2YpE4bDfrDph5b7trmEyBPraHw_-8YxMRhXN4y2B7HuPdUXsW9FL3-jU_Sx6SlvbUrmAjcCcwyKl7ukCvfoFAQPZiwVj2hEgWeougGeMzeAsJhM0g&quot;,&quot;scope&quot;:&quot;https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.install&quot;,&quot;email&quot;:&quot;naruto.shane@gmail.com&quot;,&quot;status&quot;:&quot;verified&quot;,&quot;confirmation_sent_at&quot;:null,&quot;created_at&quot;:&quot;2016-01-19T18:15:41.000-06:00&quot;,&quot;updated_at&quot;:&quot;2017-07-16T05:21:25.000-05:00&quot;,&quot;user_id&quot;:8261703}],&quot;user_preferences&quot;:[],&quot;organizations&quot;:[],&quot;pro_subscriptions&quot;:[],&quot;entities&quot;:[{&quot;slug&quot;:&quot;mrfireworks2&quot;,&quot;updated_at&quot;:&quot;2016-01-19T18:15:41.000-06:00&quot;,&quot;created_at&quot;:&quot;2016-01-19T18:15:41.000-06:00&quot;,&quot;user_id&quot;:8261703,&quot;organization_id&quot;:null,&quot;membership_id&quot;:null}],&quot;fax_number_provisions&quot;:[]}"> <meta name="constantsPayload" content="{&quot;APPLICATION_VERSION&quot;:&quot;1.7.3&quot;}"> <meta name="flash-messages" content="[]"> <meta name="latest-release-note" content="{&quot;release_note&quot;:{&quot;id&quot;:133,&quot;description&quot;:&quot;Lots of new updates in the past few days. New features include:\n* **Send via Gmail** -- Next time you&#39;re looking at \&quot;Send as Attachment\&quot; for emailing your document, try \&quot;Send via Gmail\&quot; instead. This new feature creates a draft in your Gmail inbox with your selected document(s) attached.\n* **Smooth Signatures** -- We rewrote the code for creating signatures in DocHub. The new signatures now detect and display a dynamic stroke widths that looks even more like a real signature. \n The new signature type applies to signatures drawn on either your mobile device or your desktop computer. This signature type is saved in a lossless vector format allowing downstream changes to overall brush color or thickness. To get started with an improved signature, click here: [dochub.com/settings/signatures](https://dochub.com/settings/signatures)\n* **Bug fixes** -- Lots of these, including:\n * Fixing the font size of the transparent overlaid text used for text selection and snap to grid\n * Copy and paste fixed on Internet Explorer\n * Many other misc. changes&quot;,&quot;update_type&quot;:&quot;FEATURE&quot;,&quot;title&quot;:&quot;New features- Send via Gmail and Smooth Signatures. Fixed- snap to grid, copy/paste in IE, and more.&quot;,&quot;released_at&quot;:&quot;2017-06-20T14:29:40.000-05:00&quot;,&quot;created_at&quot;:&quot;2017-06-20T14:29:40.000-05:00&quot;,&quot;updated_at&quot;:&quot;2017-06-20T14:40:34.000-05:00&quot;}}"> <meta name="isOldBrowser" content="false"> <meta name="importJobUuid" content="0ab116ddf7157146e73441a9128e7a3d"> <meta content="authenticity_token" name="csrf-param"> <meta content="p8fg+RhIYM7bWprKlu08Clmo4YwqKBb2Z/YaufTDZi4=" name="csrf-token"> <title>Shane_Website_2 | DocHub</title> <meta content="DocHub" property="og:site_name"> <meta content="summary" name="twitter:card"><meta content="https://dochub.com/import-document?jid=0ab116ddf7157146e73441a9128e7a3d&amp;auth_uid=116490783491726469150" property="og:url"> <meta content="https://dochub.com/import-document?jid=0ab116ddf7157146e73441a9128e7a3d&amp;auth_uid=116490783491726469150" name="twitter:url"> <meta content="https://dochub.com/import-document?jid=0ab116ddf7157146e73441a9128e7a3d&amp;auth_uid=116490783491726469150" name="url"> <meta content="Shane_Website_2" property="og:title"> <meta content="Shane_Website_2" name="twitter:title"> <meta content="Shane_Website_2" name="title"> <meta content="" property="og:description"> <meta content="" name="twitter:description"> <meta content="" name="description"> <meta content="https://cdn.dochub.com/assets/img/logo/wordmark-ac249b003f2fbcdfe5aad3155a004b0c.svg" property="og:image"> <meta content="https://cdn.dochub.com/assets/img/logo/wordmark-ac249b003f2fbcdfe5aad3155a004b0c.svg" name="twitter:image"> <meta content="https://cdn.dochub.com/assets/img/logo/wordmark-ac249b003f2fbcdfe5aad3155a004b0c.svg" name="image"> <script crossorigin="anonymous">var _rollbarConfig = {"ignoredMessages": ["Script error.", "Script error"], "accessToken":"ffaf1b3697c24ebc84cb806da54a9f1a","enabled":true,"captureUncaught":true,"environment":"production","payload":{"client":{"javascript":{"source_map_enabled":true,"code_version":"2310db9e1218dd01c796a5a84c2f9f94","guess_uncaught_frames":true}}}}; !function(r){function o(e){if(n[e])return n[e].exports;var t=n[e]={exports:{},id:e,loaded:!1};return r[e].call(t.exports,t,t.exports,o),t.loaded=!0,t.exports}var n={};return o.m=r,o.c=n,o.p="",o(0)}([function(r,o,n){"use strict";var e=n(1),t=n(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.0.4/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=e.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=e.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,o,n){"use strict";function e(r){return function(){try{return r.apply(this,arguments)}catch(o){try{console.error("[Rollbar]: Internal error",o)}catch(n){}}}}function t(r,o){this.options=r,this._rollbarOldOnError=null;var n=s++;this.shimId=function(){return n},window&&window._rollbarShims&&(window._rollbarShims[n]={handler:o,messages:[]})}function a(r,o){var n=o.globalAlias||"Rollbar";if("object"==typeof r[n])return r[n];r._rollbarShims={},r._rollbarWrappedError=null;var t=new p(o);return e(function(){return o.captureUncaught&&(t._rollbarOldOnError=r.onerror,i.captureUncaughtExceptions(r,t),i.wrapGlobals(r,t)),o.captureUnhandledRejections&&i.captureUnhandledRejections(r,t),r[n]=t,t})()}function l(r){return e(function(){var o=this,n=Array.prototype.slice.call(arguments,0),e={shim:o,method:r,args:n,ts:new Date};window._rollbarShims[this.shimId()].messages.push(e)})}var i=n(2),s=0,c=n(3),d=function(r,o){return new t(r,o)},p=c.bind(null,d);t.prototype.loadFull=function(r,o,n,t,a){var l=function(){var o;if(void 0===r._rollbarDidLoad){o=new Error("rollbar.js did not load");for(var n,e,t,l,i=0;n=r._rollbarShims[i++];)for(n=n.messages||[];e=n.shift();)for(t=e.args||[],i=0;i<t.length;++i)if(l=t[i],"function"==typeof l){l(o);break}}"function"==typeof a&&a(o)},i=!1,s=o.createElement("script"),c=o.getElementsByTagName("script")[0],d=c.parentNode;s.crossOrigin="",s.src=t.rollbarJsUrl,n||(s.async=!0),s.onload=s.onreadystatechange=e(function(){if(!(i||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){s.onload=s.onreadystatechange=null;try{d.removeChild(s)}catch(r){}i=!0,l()}}),d.insertBefore(s,c)},t.prototype.wrap=function(r,o){try{var n;if(n="function"==typeof o?o:function(){return o||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._wrapped){r._wrapped=function(){try{return r.apply(this,arguments)}catch(o){var e=o;throw"string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e,e}},r._wrapped._isWrap=!0;for(var e in r)r.hasOwnProperty(e)&&(r._wrapped[e]=r[e])}return r._wrapped}catch(t){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection".split(","),f=0;f<u.length;++f)t.prototype[u[f]]=l(u[f]);r.exports={setupShim:a,Rollbar:p}},function(r,o){"use strict";function n(r,o){if(r){var n;"function"==typeof o._rollbarOldOnError?n=o._rollbarOldOnError:r.onerror&&!r.onerror.belongsToRollbar&&(n=r.onerror,o._rollbarOldOnError=n);var t=function(){var t=Array.prototype.slice.call(arguments,0);e(r,o,n,t)};t.belongsToRollbar=!0,r.onerror=t}}function e(r,o,n,e){r._rollbarWrappedError&&(e[4]||(e[4]=r._rollbarWrappedError),e[5]||(e[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null),o.handleUncaughtException.apply(o,e),n&&n.apply(r,e)}function t(r,o){if(r){"function"==typeof r._rollbarURH&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var n=r.reason,e=r.promise,t=r.detail;!n&&t&&(n=t.reason,e=t.promise),o&&o.handleUnhandledRejection&&o.handleUnhandledRejection(n,e)};r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}function a(r,o){if(r){var n,e,t="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(n=0;n<t.length;++n)e=t[n],r[e]&&r[e].prototype&&l(o,r[e].prototype)}}function l(r,o){if(o.hasOwnProperty&&o.hasOwnProperty("addEventListener")){var n=o.addEventListener;n._rollbarOldAdd&&(n=n._rollbarOldAdd);var e=function(o,e,t){n.call(this,o,r.wrap(e),t)};e._rollbarOldAdd=n,o.addEventListener=e;var t=o.removeEventListener;t._rollbarOldRemove&&(t=t._rollbarOldRemove);var a=function(r,o,n){t.call(this,r,o&&o._wrapped||o,n)};a._rollbarOldRemove=t,o.removeEventListener=a}}r.exports={captureUncaughtExceptions:n,captureUnhandledRejections:t,wrapGlobals:a}},function(r,o){"use strict";function n(r,o){this.impl=r(o,this),this.options=o,e(n.prototype)}function e(r){for(var o=function(r){return function(){var o=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,o)}},n="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId".split(","),e=0;e<n.length;e++)r[n[e]]=o(n[e])}n.prototype._swapAndProcessMessages=function(r,o){this.impl=r(this.options);for(var n,e,t;n=o.shift();)e=n.method,t=n.args,this[e]&&"function"==typeof this[e]&&this[e].apply(this,t);return this},r.exports=n},function(r,o){"use strict";r.exports=function(r){return function(o){if(!o&&!window._rollbarInitialized){r=r||{};for(var n,e,t=r.globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;n=window._rollbarShims[i++];)e||(e=n.handler),n.handler._swapAndProcessMessages(l,n.messages);window[t]=e,window._rollbarInitialized=!0}}}}]);
+      Rollbar.configure({
+        payload: {
+          person: {
+            id: 8261703,
+            username: 'mrfireworks2',
+            email: 'naruto.shane@gmail.com'
+          }
+        }
+      });</script> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-6088184-14', { 'userId': '8261703' }, 'auto');
+    ga('require', 'displayfeatures');</script> <link href="./Shane_Website_2 _ DocHub_files/vendor-369ef1689d47eadfa37023952b53e653.css" media="screen" rel="stylesheet"> <link href="./Shane_Website_2 _ DocHub_files/dochub-b91041427152697b7fead3d208b8fda6.css" media="screen" rel="stylesheet"> <style type="text/css">.jp-card.jp-card-safari.jp-card-identified .jp-card-front:before, .jp-card.jp-card-safari.jp-card-identified .jp-card-back:before {   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%); }  .jp-card.jp-card-ie-10.jp-card-flipped, .jp-card.jp-card-ie-11.jp-card-flipped {   -webkit-transform: 0deg;   -moz-transform: 0deg;   -ms-transform: 0deg;   -o-transform: 0deg;   transform: 0deg; }   .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-front, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-front {     -webkit-transform: rotateY(0deg);     -moz-transform: rotateY(0deg);     -ms-transform: rotateY(0deg);     -o-transform: rotateY(0deg);     transform: rotateY(0deg); }   .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back {     -webkit-transform: rotateY(0deg);     -moz-transform: rotateY(0deg);     -ms-transform: rotateY(0deg);     -o-transform: rotateY(0deg);     transform: rotateY(0deg); }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back:after, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back:after {       left: 18%; }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-cvc, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-cvc {       -webkit-transform: rotateY(180deg);       -moz-transform: rotateY(180deg);       -ms-transform: rotateY(180deg);       -o-transform: rotateY(180deg);       transform: rotateY(180deg);       left: 5%; }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-shiny, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-shiny {       left: 84%; }       .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-shiny:after, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-shiny:after {         left: -480%;         -webkit-transform: rotateY(180deg);         -moz-transform: rotateY(180deg);         -ms-transform: rotateY(180deg);         -o-transform: rotateY(180deg);         transform: rotateY(180deg); }  .jp-card.jp-card-ie-10.jp-card-amex .jp-card-back, .jp-card.jp-card-ie-11.jp-card-amex .jp-card-back {   display: none; }  .jp-card-logo {   height: 36px;   width: 60px;   font-style: italic; }   .jp-card-logo, .jp-card-logo:before, .jp-card-logo:after {     box-sizing: border-box; }  .jp-card-logo.jp-card-amex {   text-transform: uppercase;   font-size: 4px;   font-weight: bold;   color: white;   background-image: repeating-radial-gradient(circle at center, #FFF 1px, #999 2px);   background-image: repeating-radial-gradient(circle at center, #FFF 1px, #999 2px);   border: 1px solid #EEE; }   .jp-card-logo.jp-card-amex:before, .jp-card-logo.jp-card-amex:after {     width: 28px;     display: block;     position: absolute;     left: 16px; }   .jp-card-logo.jp-card-amex:before {     height: 28px;     content: "american";     top: 3px;     text-align: left;     padding-left: 2px;     padding-top: 11px;     background: #267AC3; }   .jp-card-logo.jp-card-amex:after {     content: "express";     bottom: 11px;     text-align: right;     padding-right: 2px; }  .jp-card.jp-card-amex.jp-card-flipped {   -webkit-transform: none;   -moz-transform: none;   -ms-transform: none;   -o-transform: none;   transform: none; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front:before, .jp-card.jp-card-amex.jp-card-identified .jp-card-back:before {   background-color: #108168; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front .jp-card-logo.jp-card-amex {   opacity: 1; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front .jp-card-cvc {   visibility: visible; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front:after {   opacity: 1; }  .jp-card-logo.jp-card-discover {   background: #FF6600;   color: #111;   text-transform: uppercase;   font-style: normal;   font-weight: bold;   font-size: 10px;   text-align: center;   overflow: hidden;   z-index: 1;   padding-top: 9px;   letter-spacing: .03em;   border: 1px solid #EEE; }   .jp-card-logo.jp-card-discover:before, .jp-card-logo.jp-card-discover:after {     content: " ";     display: block;     position: absolute; }   .jp-card-logo.jp-card-discover:before {     background: white;     width: 200px;     height: 200px;     border-radius: 200px;     bottom: -5%;     right: -80%;     z-index: -1; }   .jp-card-logo.jp-card-discover:after {     width: 8px;     height: 8px;     border-radius: 4px;     top: 10px;     left: 27px;     background-color: #FF6600;     background-image: -webkit-radial-gradient(#FF6600, #fff);     background-image: radial-gradient(  #FF6600, #fff);     content: "network";     font-size: 4px;     line-height: 24px;     text-indent: -7px; }  .jp-card .jp-card-front .jp-card-logo.jp-card-discover {   right: 12%;   top: 18%; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-front:before, .jp-card.jp-card-discover.jp-card-identified .jp-card-back:before {   background-color: #86B8CF; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-logo.jp-card-discover {   opacity: 1; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-front:after {   -webkit-transition: 400ms;   -moz-transition: 400ms;   transition: 400ms;   content: " ";   display: block;   background-color: #FF6600;   background-image: -webkit-linear-gradient(#FF6600, #ffa366, #FF6600);   background-image: linear-gradient(#FF6600, #ffa366, #FF6600);   height: 50px;   width: 50px;   border-radius: 25px;   position: absolute;   left: 100%;   top: 15%;   margin-left: -25px;   box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.5); }  .jp-card-logo.jp-card-visa {   background: white;   text-transform: uppercase;   color: #1A1876;   text-align: center;   font-weight: bold;   font-size: 15px;   line-height: 18px; }   .jp-card-logo.jp-card-visa:before, .jp-card-logo.jp-card-visa:after {     content: " ";     display: block;     width: 100%;     height: 25%; }   .jp-card-logo.jp-card-visa:before {     background: #1A1876; }   .jp-card-logo.jp-card-visa:after {     background: #E79800; }  .jp-card.jp-card-visa.jp-card-identified .jp-card-front:before, .jp-card.jp-card-visa.jp-card-identified .jp-card-back:before {   background-color: #191278; }  .jp-card.jp-card-visa.jp-card-identified .jp-card-logo.jp-card-visa {   opacity: 1; }  .jp-card-logo.jp-card-mastercard {   color: white;   font-weight: bold;   text-align: center;   font-size: 9px;   line-height: 36px;   z-index: 1;   text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }   .jp-card-logo.jp-card-mastercard:before, .jp-card-logo.jp-card-mastercard:after {     content: " ";     display: block;     width: 36px;     top: 0;     position: absolute;     height: 36px;     border-radius: 18px; }   .jp-card-logo.jp-card-mastercard:before {     left: 0;     background: #FF0000;     z-index: -1; }   .jp-card-logo.jp-card-mastercard:after {     right: 0;     background: #FFAB00;     z-index: -2; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-front .jp-card-logo.jp-card-mastercard, .jp-card.jp-card-mastercard.jp-card-identified .jp-card-back .jp-card-logo.jp-card-mastercard {   box-shadow: none; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-front:before, .jp-card.jp-card-mastercard.jp-card-identified .jp-card-back:before {   background-color: #0061A8; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-logo.jp-card-mastercard {   opacity: 1; }  .jp-card-logo.jp-card-maestro {   color: white;   font-weight: bold;   text-align: center;   font-size: 14px;   line-height: 36px;   z-index: 1;   text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }   .jp-card-logo.jp-card-maestro:before, .jp-card-logo.jp-card-maestro:after {     content: " ";     display: block;     width: 36px;     top: 0;     position: absolute;     height: 36px;     border-radius: 18px; }   .jp-card-logo.jp-card-maestro:before {     left: 0;     background: #0064CB;     z-index: -1; }   .jp-card-logo.jp-card-maestro:after {     right: 0;     background: #CC0000;     z-index: -2; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-front .jp-card-logo.jp-card-maestro, .jp-card.jp-card-maestro.jp-card-identified .jp-card-back .jp-card-logo.jp-card-maestro {   box-shadow: none; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-front:before, .jp-card.jp-card-maestro.jp-card-identified .jp-card-back:before {   background-color: #0B2C5F; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-logo.jp-card-maestro {   opacity: 1; }  .jp-card-logo.jp-card-dankort {   width: 60px;   height: 36px;   padding: 3px;   border-radius: 8px;   border: #000000 1px solid;   background-color: #FFFFFF; }   .jp-card-logo.jp-card-dankort .dk {     position: relative;     width: 100%;     height: 100%;     overflow: hidden; }     .jp-card-logo.jp-card-dankort .dk:before {       background-color: #ED1C24;       content: '';       position: absolute;       width: 100%;       height: 100%;       display: block;       border-radius: 6px; }     .jp-card-logo.jp-card-dankort .dk:after {       content: '';       position: absolute;       top: 50%;       margin-top: -7.7px;       right: 0;       width: 0;       height: 0;       border-style: solid;       border-width: 7px 7px 10px 0;       border-color: transparent #ED1C24 transparent transparent;       z-index: 1; }   .jp-card-logo.jp-card-dankort .d, .jp-card-logo.jp-card-dankort .k {     position: absolute;     top: 50%;     width: 50%;     display: block;     height: 15.4px;     margin-top: -7.7px;     background: white; }   .jp-card-logo.jp-card-dankort .d {     left: 0;     border-radius: 0 8px 10px 0; }     .jp-card-logo.jp-card-dankort .d:before {       content: '';       position: absolute;       top: 50%;       left: 50%;       display: block;       background: #ED1C24;       border-radius: 2px 4px 6px 0px;       height: 5px;       width: 7px;       margin: -3px 0 0 -4px; }   .jp-card-logo.jp-card-dankort .k {     right: 0; }     .jp-card-logo.jp-card-dankort .k:before, .jp-card-logo.jp-card-dankort .k:after {       content: '';       position: absolute;       right: 50%;       width: 0;       height: 0;       border-style: solid;       margin-right: -1px; }     .jp-card-logo.jp-card-dankort .k:before {       top: 0;       border-width: 8px 5px 0 0;       border-color: #ED1C24 transparent transparent transparent; }     .jp-card-logo.jp-card-dankort .k:after {       bottom: 0;       border-width: 0 5px 8px 0;       border-color: transparent transparent #ED1C24 transparent; }  .jp-card.jp-card-dankort.jp-card-identified .jp-card-front:before, .jp-card.jp-card-dankort.jp-card-identified .jp-card-back:before {   background-color: #0055C7; }  .jp-card.jp-card-dankort.jp-card-identified .jp-card-logo.jp-card-dankort {   opacity: 1; }  .jp-card-logo.jp-card-elo {   height: 50px;   width: 50px;   border-radius: 100%;   background: black;   color: white;   text-align: center;   text-transform: lowercase;   font-size: 21px;   font-style: normal;   letter-spacing: 1px;   font-weight: bold;   padding-top: 13px; }   .jp-card-logo.jp-card-elo .e, .jp-card-logo.jp-card-elo .l, .jp-card-logo.jp-card-elo .o {     display: inline-block;     position: relative; }   .jp-card-logo.jp-card-elo .e {     -webkit-transform: rotate(-15deg);     -moz-transform: rotate(-15deg);     -ms-transform: rotate(-15deg);     -o-transform: rotate(-15deg);     transform: rotate(-15deg); }   .jp-card-logo.jp-card-elo .o {     position: relative;     display: inline-block;     width: 12px;     height: 12px;     right: 0;     top: 7px;     border-radius: 100%;     background-image: -webkit-linear-gradient( yellow 50%, red 50%);     background-image: linear-gradient( yellow 50%, red 50%);     -webkit-transform: rotate(40deg);     -moz-transform: rotate(40deg);     -ms-transform: rotate(40deg);     -o-transform: rotate(40deg);     transform: rotate(40deg);     text-indent: -9999px; }     .jp-card-logo.jp-card-elo .o:before {       content: "";       position: absolute;       width: 49%;       height: 49%;       background: black;       border-radius: 100%;       text-indent: -99999px;       top: 25%;       left: 25%; }  .jp-card.jp-card-elo.jp-card-identified .jp-card-front:before, .jp-card.jp-card-elo.jp-card-identified .jp-card-back:before {   background-color: #6F6969; }  .jp-card.jp-card-elo.jp-card-identified .jp-card-logo.jp-card-elo {   opacity: 1; }  .jp-card-container {   -webkit-perspective: 1000px;   -moz-perspective: 1000px;   perspective: 1000px;   width: 350px;   max-width: 100%;   height: 200px;   margin: auto;   z-index: 1;   position: relative; }  .jp-card {   font-family: "Helvetica Neue";   line-height: 1;   position: relative;   width: 100%;   height: 100%;   min-width: 315px;   border-radius: 10px;   -webkit-transform-style: preserve-3d;   -moz-transform-style: preserve-3d;   -ms-transform-style: preserve-3d;   -o-transform-style: preserve-3d;   transform-style: preserve-3d;   -webkit-transition: all 400ms linear;   -moz-transition: all 400ms linear;   transition: all 400ms linear; }   .jp-card > *, .jp-card > *:before, .jp-card > *:after {     -moz-box-sizing: border-box;     -webkit-box-sizing: border-box;     box-sizing: border-box;     font-family: inherit; }   .jp-card.jp-card-flipped {     -webkit-transform: rotateY(180deg);     -moz-transform: rotateY(180deg);     -ms-transform: rotateY(180deg);     -o-transform: rotateY(180deg);     transform: rotateY(180deg); }   .jp-card .jp-card-front, .jp-card .jp-card-back {     -webkit-backface-visibility: hidden;     backface-visibility: hidden;     -webkit-transform-style: preserve-3d;     -moz-transform-style: preserve-3d;     -ms-transform-style: preserve-3d;     -o-transform-style: preserve-3d;     transform-style: preserve-3d;     -webkit-transition: all 400ms linear;     -moz-transition: all 400ms linear;     transition: all 400ms linear;     width: 100%;     height: 100%;     position: absolute;     top: 0;     left: 0;     overflow: hidden;     border-radius: 10px;     background: #DDD; }     .jp-card .jp-card-front:before, .jp-card .jp-card-back:before {       content: " ";       display: block;       position: absolute;       width: 100%;       height: 100%;       top: 0;       left: 0;       opacity: 0;       border-radius: 10px;       -webkit-transition: all 400ms ease;       -moz-transition: all 400ms ease;       transition: all 400ms ease; }     .jp-card .jp-card-front:after, .jp-card .jp-card-back:after {       content: " ";       display: block; }     .jp-card .jp-card-front .jp-card-display, .jp-card .jp-card-back .jp-card-display {       color: white;       font-weight: normal;       opacity: 0.5;       -webkit-transition: opacity 400ms linear;       -moz-transition: opacity 400ms linear;       transition: opacity 400ms linear; }       .jp-card .jp-card-front .jp-card-display.jp-card-focused, .jp-card .jp-card-back .jp-card-display.jp-card-focused {         opacity: 1;         font-weight: 700; }     .jp-card .jp-card-front .jp-card-cvc, .jp-card .jp-card-back .jp-card-cvc {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 14px; }     .jp-card .jp-card-front .jp-card-shiny, .jp-card .jp-card-back .jp-card-shiny {       width: 50px;       height: 35px;       border-radius: 5px;       background: #CCC;       position: relative; }       .jp-card .jp-card-front .jp-card-shiny:before, .jp-card .jp-card-back .jp-card-shiny:before {         content: " ";         display: block;         width: 70%;         height: 60%;         border-top-right-radius: 5px;         border-bottom-right-radius: 5px;         background: #d9d9d9;         position: absolute;         top: 20%; }   .jp-card .jp-card-front .jp-card-logo {     position: absolute;     opacity: 0;     right: 5%;     top: 8%;     -webkit-transition: 400ms;     -moz-transition: 400ms;     transition: 400ms; }   .jp-card .jp-card-front .jp-card-lower {     width: 80%;     position: absolute;     left: 10%;     bottom: 30px; }     @media only screen and (max-width: 480px) {       .jp-card .jp-card-front .jp-card-lower {         width: 90%;         left: 5%; } }     .jp-card .jp-card-front .jp-card-lower .jp-card-cvc {       visibility: hidden;       float: right;       position: relative;       bottom: 5px; }     .jp-card .jp-card-front .jp-card-lower .jp-card-number {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 24px;       clear: both;       margin-bottom: 30px; }     .jp-card .jp-card-front .jp-card-lower .jp-card-expiry {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       letter-spacing: 0em;       position: relative;       float: right;       width: 25%; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:before, .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:after {         font-family: "Helvetica Neue";         font-weight: bold;         font-size: 7px;         white-space: pre;         display: block;         opacity: .5; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:before {         content: attr(data-before);         margin-bottom: 2px;         font-size: 7px;         text-transform: uppercase; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:after {         position: absolute;         content: attr(data-after);         text-align: right;         right: 100%;         margin-right: 5px;         margin-top: 2px;         bottom: 0; }     .jp-card .jp-card-front .jp-card-lower .jp-card-name {       text-transform: uppercase;       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 20px;       max-height: 45px;       position: absolute;       bottom: 0;       width: 190px;       display: -webkit-box;       -webkit-line-clamp: 2;       -webkit-box-orient: horizontal;       overflow: hidden;       text-overflow: ellipsis; }   .jp-card .jp-card-back {     -webkit-transform: rotateY(180deg);     -moz-transform: rotateY(180deg);     -ms-transform: rotateY(180deg);     -o-transform: rotateY(180deg);     transform: rotateY(180deg); }     .jp-card .jp-card-back .jp-card-bar {       background-color: #444;       background-image: -webkit-linear-gradient(#444, #333);       background-image: linear-gradient(#444, #333);       width: 100%;       height: 20%;       position: absolute;       top: 10%; }     .jp-card .jp-card-back:after {       content: " ";       display: block;       background-color: #FFF;       background-image: -webkit-linear-gradient(#FFF, #FFF);       background-image: linear-gradient(#FFF, #FFF);       width: 80%;       height: 16%;       position: absolute;       top: 40%;       left: 2%; }     .jp-card .jp-card-back .jp-card-cvc {       position: absolute;       top: 40%;       left: 85%;       -webkit-transition-delay: 600ms;       -moz-transition-delay: 600ms;       transition-delay: 600ms; }     .jp-card .jp-card-back .jp-card-shiny {       position: absolute;       top: 66%;       left: 2%; }       .jp-card .jp-card-back .jp-card-shiny:after {         content: "This card has been issued by Jesse Pollak and is licensed for anyone to use anywhere for free.AIt comes with no warranty.A For support issues, please visit: github.com/jessepollak/card.";         position: absolute;         left: 120%;         top: 5%;         color: white;         font-size: 7px;         width: 230px;         opacity: .5; }   .jp-card.jp-card-identified {     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }     .jp-card.jp-card-identified .jp-card-front, .jp-card.jp-card-identified .jp-card-back {       background-color: #000;       background-color: rgba(0, 0, 0, 0.5); }       .jp-card.jp-card-identified .jp-card-front:before, .jp-card.jp-card-identified .jp-card-back:before {         -webkit-transition: all 400ms ease;         -moz-transition: all 400ms ease;         transition: all 400ms ease;         background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);         background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);         opacity: 1; }       .jp-card.jp-card-identified .jp-card-front .jp-card-logo, .jp-card.jp-card-identified .jp-card-back .jp-card-logo {         box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3); }     .jp-card.jp-card-identified.no-radial-gradient .jp-card-front:before, .jp-card.jp-card-identified.no-radial-gradient .jp-card-back:before {       background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);       background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%); } </style><style></style><link rel="stylesheet" href="./Shane_Website_2 _ DocHub_files/css" type="text/css" media="screen"></head> <body class="dh-body ember-application" style="background: rgb(242, 242, 242);">  <script crossorigin="anonymous" src="./Shane_Website_2 _ DocHub_files/vendor-dad634dfbff12e8be64fd032b4b176b0.js.download"></script> <script crossorigin="anonymous" src="./Shane_Website_2 _ DocHub_files/dochub-c148d5f1067db0f92d7af6c94b52b1a5.js.download"></script>  <div id="ember656" class="ember-view">
+<!---->
+<div id="document-wrapper">
+  <div id="ember847" style="touch-action: manipulation; -ms-touch-action: manipulation;" class="ember-view dh-document-toolbar"><nav class="navbar navbar-default" role="navigation">
+  <div id="js-toolbar" class="dh-document-bars">
+
+    <div class="navbar-header navbar-document">
+
+      <div class="collapse navbar-collapse navbar-right hidden-xs">
+
+        <ul class="nav navbar-nav pull-right">
+            <li class="btn-group navbar-btn" data-toggle="tooltip" data-placement="bottom" title="Try DocHub Pro Free!">
+              <a id="ember858" style="touch-action: manipulation; -ms-touch-action: manipulation;" href="https://dochub.com/settings/billing/plans" class="no-padding ember-view"><button class="btn btn-xs btn-default no-focus-ring" style="margin: 7px 10px 0;touch-action: manipulation; -ms-touch-action: manipulation;">Upgrade</button></a>
+            </li>
+
+            <li id="ember933" style="" class="ember-view dh-document-file-menu dropdown file-menu">
+  <a class="dropdown-toggle" data-toggle="dropdown" style="touch-action: manipulation; -ms-touch-action: manipulation;">
+    <div data-toggle="tooltip" data-placement="bottom" data-container=".navbar" title="File">
+      <span class="fa fa-bars"></span>&nbsp;<span class="caret"></span>
+    </div>
+  </a>
+
+<ul class="dropdown-menu dropdown-menu-right" role="menu">
+<!----><!---->    <li class="dropdown-submenu pull-left-custom">
+      <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="934">Send</a>
+      <ul class="dropdown-menu hidden">
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="935">Share Link</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="936">Email Attachment</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="937">Send via Gmail <span class="label label-info" style="display: inline-block; font-size: 60%; vertical-align:center;">BETA</span></a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="938">Sign Request</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="939">Fax</a></li>
+      </ul>
+    </li>
+      <li class="dropdown-submenu pull-left-custom">
+        <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="946">Actions</a>
+        <ul class="dropdown-menu hidden">
+<!---->              <li>
+                <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="947">
+                  Convert to Template
+                </a>
+              </li>
+              <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="948">Make a Copy...</a></li>
+              <li class="dropdown-submenu pull-left-custom">
+                <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="949">Rotate Pages</a>
+                <ul class="dropdown-menu hidden">
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="950">Rotate 180°</a></li>
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="951">Rotate 90° Clockwise</a></li>
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="952">Rotate 90° Counter-Clockwise</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu pull-left-custom">
+                <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="953">Append Pages</a>
+                <ul class="dropdown-menu hidden">
+                  <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="954">Append Blank Page</a></li>
+                  <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="955">Merge and Append File...</a></li>
+                </ul>
+              </li>
+<!---->              <li>
+                <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="956">
+                  Destroy Document
+                </a>
+              </li>
+
+            <li role="presentation" class="divider"></li>
+
+            <li>
+              <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="957">
+                <!----> Toggle Audit Mode
+              </a>
+            </li>
+
+            <li id="ember975" style="" class="ember-view tooltipstered">  <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="976">
+    <i class="fa fa-check"></i>  Toggle Snap to Grid (G)
+  </a>
+
+</li>
+
+            <li>
+              <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="977">
+                <!---->Toggle Activity Panel (A)
+              </a>
+            </li>
+
+<!---->
+        </ul>
+      </li>
+
+    <li class="dropdown-submenu pull-left-custom">
+      <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="978">Download</a>
+      <ul class="dropdown-menu hidden">
+            <li>
+    <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="990">Save to <i class="fa fa-google"></i> Drive</a>
+
+  </li>
+<li>
+  <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="991">
+      Save to <i class="fa fa-google"></i> Drive As...
+
+  </a>
+</li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="992">
+            Export to <i class="fa fa-dropbox"></i> Dropbox...
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="993">
+            Export to <img src="./Shane_Website_2 _ DocHub_files/onedrive-ee4027c48b3e6d0e335486a449ee33da.svg" width="20" height="20"> OneDrive...
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="994">Download as PDF (lossless)</a>
+        </li>
+
+<!---->
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="999">
+            Download DOC (imperfect) <small class="label label-info" data-toggle="tooltip" data-placement="bottom" title="Big improvements are coming soon to this feature!">BETA</small>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1000">Document Properties</a></li>
+      <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1001">Permissions and Sharing</a></li>
+
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1002">Document Audit <i class="fa fa-lock" style="color: orange;"></i> <span class="label label-info" style="vertical-align: center; display: inline-block; font-size: 60%;">BETA</span></a></li>
+
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1003"><i class="fa fa-print"></i> Print...</a></li>
+
+    <li role="presentation" class="divider"></li>
+    <li class="dropdown-header"><span style="font-size: 14px;">
+      Signed in as <strong>mrfireworks2</strong></span><br>
+      <small style="font-size: 11.8px">naruto.shane@gmail.com</small>
+    </li>
+      <li><a id="ember1004" style="touch-action: manipulation; -ms-touch-action: manipulation;" href="https://dochub.com/settings/profile" tabindex="-1" class="ember-view">User Settings</a></li>
+    <li>
+      <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1021"><i class="fa fa-sign-out"></i> Sign Out</a>
+    </li>
+</ul>
+</li>
+        </ul>
+      </div>
+      <div class="pull-right" style="margin-right: 5px;">
+        <div id="ember1029" style="" class="ember-view"><!----></div>
+<!---->      </div>
+
+        <a id="ember1032" style="touch-action: manipulation; -ms-touch-action: manipulation;" href="https://dochub.com/" class="ember-view navbar-brand no-padding"><img src="./Shane_Website_2 _ DocHub_files/toolbar-logo-b5f96a2d8044c85ad92f7c2e47e8d980.svg" class="dh-logo" style="margin: 0;"></a>
+
+<!---->
+<!---->
+      <p class="title-text has-textfield  has-status ">
+        <span id="ember1096" style="" class="ember-view">  <input id="ember1108" style="touch-action: manipulation; width: 159.788px; overflow: hidden;" type="text" class="dh-toolbar-title ember-view ember-text-field ember-auto-resize">
+<!----></span> <br>
+<!---->
+<!---->      <small class="text-muted" style="font-size:12px;">Saved</small>
+      </p>
+    </div>
+
+    <div class="collapse navbar-collapse mobile-navbar">
+      <div class="visible-xs-inline">
+        <ul class="nav navbar-nav ">
+          <li id="ember1109" style="" class="ember-view dh-document-file-menu dropdown file-menu">
+  <a class="dropdown-toggle" data-toggle="dropdown" style="touch-action: manipulation; -ms-touch-action: manipulation;">
+    <div data-toggle="tooltip" data-placement="bottom" data-container=".navbar" title="File">
+      <span class="fa fa-bars"></span>&nbsp;<span class="caret"></span>
+    </div>
+  </a>
+
+<ul class="dropdown-menu dropdown-menu-right" role="menu">
+<!----><!---->    <li class="dropdown-submenu pull-left-custom">
+      <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1110">Send</a>
+      <ul class="dropdown-menu hidden">
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1111">Share Link</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1112">Email Attachment</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1113">Send via Gmail <span class="label label-info" style="display: inline-block; font-size: 60%; vertical-align:center;">BETA</span></a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1114">Sign Request</a></li>
+          <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1115">Fax</a></li>
+      </ul>
+    </li>
+      <li class="dropdown-submenu pull-left-custom">
+        <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1116">Actions</a>
+        <ul class="dropdown-menu hidden">
+<!---->              <li>
+                <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1117">
+                  Convert to Template
+                </a>
+              </li>
+              <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1118">Make a Copy...</a></li>
+              <li class="dropdown-submenu pull-left-custom">
+                <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1119">Rotate Pages</a>
+                <ul class="dropdown-menu hidden">
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1120">Rotate 180°</a></li>
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1121">Rotate 90° Clockwise</a></li>
+                  <li><a tablindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1122">Rotate 90° Counter-Clockwise</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu pull-left-custom">
+                <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1123">Append Pages</a>
+                <ul class="dropdown-menu hidden">
+                  <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1124">Append Blank Page</a></li>
+                  <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1125">Merge and Append File...</a></li>
+                </ul>
+              </li>
+<!---->              <li>
+                <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1126">
+                  Destroy Document
+                </a>
+              </li>
+
+            <li role="presentation" class="divider"></li>
+
+            <li>
+              <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1127">
+                <!----> Toggle Audit Mode
+              </a>
+            </li>
+
+            <li id="ember1129" style="" class="ember-view tooltipstered">  <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1130">
+    <i class="fa fa-check"></i>  Toggle Snap to Grid (G)
+  </a>
+
+</li>
+
+            <li>
+              <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1131">
+                <!---->Toggle Activity Panel (A)
+              </a>
+            </li>
+
+<!---->
+        </ul>
+      </li>
+
+    <li class="dropdown-submenu pull-left-custom">
+      <a tabindex="-1" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1132">Download</a>
+      <ul class="dropdown-menu hidden">
+            <li>
+    <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1134">Save to <i class="fa fa-google"></i> Drive</a>
+
+  </li>
+<li>
+  <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1135">
+      Save to <i class="fa fa-google"></i> Drive As...
+
+  </a>
+</li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1136">
+            Export to <i class="fa fa-dropbox"></i> Dropbox...
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1137">
+            Export to <img src="./Shane_Website_2 _ DocHub_files/onedrive-ee4027c48b3e6d0e335486a449ee33da.svg" width="20" height="20"> OneDrive...
+          </a>
+        </li>
+
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1138">Download as PDF (lossless)</a>
+        </li>
+
+<!---->
+        <li>
+          <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1139">
+            Download DOC (imperfect) <small class="label label-info" data-toggle="tooltip" data-placement="bottom" title="Big improvements are coming soon to this feature!">BETA</small>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1140">Document Properties</a></li>
+      <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1141">Permissions and Sharing</a></li>
+
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1142">Document Audit <i class="fa fa-lock" style="color: orange;"></i> <span class="label label-info" style="vertical-align: center; display: inline-block; font-size: 60%;">BETA</span></a></li>
+
+    <li><a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1143"><i class="fa fa-print"></i> Print...</a></li>
+
+    <li role="presentation" class="divider"></li>
+    <li class="dropdown-header"><span style="font-size: 14px;">
+      Signed in as <strong>mrfireworks2</strong></span><br>
+      <small style="font-size: 11.8px">naruto.shane@gmail.com</small>
+    </li>
+      <li><a id="ember1144" style="touch-action: manipulation; -ms-touch-action: manipulation;" href="https://dochub.com/settings/profile" tabindex="-1" class="ember-view">User Settings</a></li>
+    <li>
+      <a style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1145"><i class="fa fa-sign-out"></i> Sign Out</a>
+    </li>
+</ul>
+</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+  <ul id="ember1154" style="" class="ember-view dh-toolbar dh-btn-toolbar"><button id="ember1163" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <i class="fa fa-th"></i>
+
+
+</button>
+<button id="ember1164" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">      <i class="fa fa-list-alt"></i>
+
+
+</button>
+<span class="dh-separator">
+<button id="ember1165" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">      <i class="fa fa-print"></i>
+
+
+</button></span>
+
+  <span class="dh-separator">
+<button id="ember1166" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn disabled dh-disabled-cursor tooltipstered">        <i class="fa fa-undo"></i>
+
+
+</button>
+<button id="ember1167" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn disabled dh-disabled-cursor tooltipstered">        <i class="fa fa-rotate-right"></i>
+
+
+</button>  </span>
+
+  <span class="dh-separator">
+<button id="ember1177" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn active tooltipstered">      <img src="./Shane_Website_2 _ DocHub_files/pointer-ff37f3bc7a025d0760414e707c658435.svg">
+
+
+</button></span>
+
+<button id="ember1178" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="glyphicon glyphicon-font"></span>
+
+
+</button>
+<div id="ember1187" style="" class="ember-view dh-toolbar-dropdown dh-disclosure btn-group"><button id="ember1188" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="glyphicon glyphicon-pencil"></span>
+
+
+</button>
+<button id="ember1189" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="caret"></span>
+
+
+</button>
+<ul class="dh-dropdown-menu dropdown-menu">
+<button id="ember1198" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">    <span class="glyphicon glyphicon-pencil"></span>
+
+</button>
+<button id="ember1199" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">    <i class="fa fa-square-o locked"></i>
+
+</button>
+<button id="ember1200" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">    <i class="fa fa-circle-o locked"></i>
+
+</button>
+<button id="ember1201" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">    <i class="line-tool fa locked"></i>
+
+</button></ul>
+</div>
+
+<div id="ember1210" style="" class="ember-view dh-toolbar-dropdown dh-disclosure btn-group"><button id="ember1211" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <img src="./Shane_Website_2 _ DocHub_files/highlight-text-9725fbfa6ecab13807d8513a8f59a9b5.svg">
+
+
+</button>
+<button id="ember1212" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">      <span class="caret"></span>
+
+
+</button>
+  <ul class="dh-dropdown-menu dropdown-menu">
+<button id="ember1213" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">      <img src="./Shane_Website_2 _ DocHub_files/highlight-text-9725fbfa6ecab13807d8513a8f59a9b5.svg">
+
+</button>
+<button id="ember1214" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn dh-toolbar-dropdown-item tooltipstered">      <img src="./Shane_Website_2 _ DocHub_files/highlight-box-20b850a344675327801ac018fa466e9b.svg">
+
+</button>  </ul>
+</div>
+
+<button id="ember1215" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="glyphicon glyphicon-comment"></span>
+
+
+</button>
+<button id="ember1216" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <i class="fa fa-eraser"></i>
+
+
+</button>
+<div id="ember1225" style="" class="ember-view dh-toolbar-dropdown dh-disclosure btn-group toolbar-stamp-selector"><button id="ember1226" style="" aria-haspopup="false" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <i style="font-size: 16px; color: #333333;" class="fa fa-check"></i>
+
+
+</button>
+<button id="ember1227" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">    <span class="caret"></span>
+
+
+</button>
+<div class="dropdown-menu dh-stamp-dropdown dh-autoposition-dropdown">
+  <div class="stamp-wrap">
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1228">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-check"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1229">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-exclamation-triangle"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1230">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-clock-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1231">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-times"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1232">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-flag"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1233">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-circle-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1234">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-check-square-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1235">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-pencil-square-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1236">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-frown-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1237">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-smile-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1238">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-pencil"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1239">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-heart-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1240">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-star"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1241">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-question"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1242">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-check-square"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1243">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-square-o"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1244">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-arrow-circle-left"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1245">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-arrow-circle-right"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1246">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-arrow-left"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1247">
+        <i style="font-size: 20px; color: #333333;" class="fa fa-arrow-right"></i>
+      </button>
+  </div>
+  <hr style="margin: 0;">
+  <button class="btn btn-link" style="padding: 3px; margin: 0 2px;touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1248">
+    Customize...
+  </button>
+</div>
+</div>
+
+<div id="ember1261" style="" class="ember-view dh-toolbar-btn insert-image tooltipstered"><div id="ember1270" style="" class="ember-view droppable dh-droplet-area">
+  <div class="file-upload ">
+    <!-- Resets input after 1st upload -->
+      <span class="fa fa-image"></span>
+      <input id="ember1283" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="file" class="ember-view files">
+  </div>
+
+
+<!----></div></div>
+
+<div id="ember1292" style="" class="ember-view dh-toolbar-dropdown btn-group"><button id="ember1293" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="ember-view dh-toolbar-btn tooltipstered">  Sign
+
+
+</button>
+<ul class="dh-dropdown-menu signature-selector dropdown-menu dh-autoposition-dropdown">
+  <li class="dh-toolbar-dropdown-item" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1294">
+    Create Signature...
+  </li>
+
+
+<!---->
+  <li class="divider" style="margin: 3px 0;"></li>
+<!---->  <li style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1302">
+<div id="ember1311" style="" draggable="true" class="ember-view dh-user-signature text-center">      7/16/2017
+
+</div>  </li>
+
+    <li role="presentation" class="dropdown-header">
+      You have zero saved signatures.  Create a signature, then drag &amp; drop it from here.
+    </li>
+</ul>
+</div>
+
+
+
+<div class="dh-separator"><!----><!----><!----><!----></div><!----><!----><div class="dh-separator"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div>
+
+</ul>
+
+<!---->
+<style> .ui-selectable-helper{ height:100%; width:100%; background:transparent; border:none; } .dh-page-text{ cursor: text; } </style>
+</div>
+
+  <div class="flex-body">
+        <div class="mainArea">
+
+<!---->
+<!---->
+<div id="ember1364" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" tabindex="-1" class="ember-view dh-viewport no-focus-ring">
+<div id="ember1373" style="touch-action: manipulation; -ms-touch-action: manipulation;" class="ember-view dh-fixed-controls affix">  <div id="ember1382" style="" class="ember-view">
+<p class="btn-group-vertical">
+  <button class="btn btn-default no-focus-ring" data-toggle="tooltip" data-placement="right" data-container="#js-toolbar" title="Zoom In" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1383">
+    <span class="glyphicon glyphicon-zoom-in"></span>
+  </button>
+  <button class="btn btn-default no-focus-ring" data-toggle="tooltip" data-placement="right" data-container="#js-toolbar" title="Zoom Out" style="touch-action: manipulation; -ms-touch-action: manipulation;" data-ember-action="1384">
+    <span class="glyphicon glyphicon-zoom-out"></span>
+  </button>
+</p>
+</div>
+
+<!---->
+<!----></div>
+
+
+  <style>
+    .dh-page-text::-moz-selection { background: rgba(178, 215, 255, 0.7); }
+  </style>
+
+<!---->
+  
+  <input id="ember1393" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="text" class="ember-view ember-text-field dh-hidden-tab-receiver">
+  <div class="dh-document-pages-layout" style="min-width: 1536px; width: 1536px; max-width: 1536px;  min-height: 1339.2px; left: 0px;    ">
+  <div class="dh-document-pages-layout-wrapper" style="margin: 10px 278.4px; 30px;">
+        <div id="ember1403" style="width: 1099.2px; height: 1267.2px; top: 0px;" data-model-id="710193144" class="ember-view dh-page">  <div class="dh-page-padding">
+      <div id="ember1412" style="height: 1267px; width: 979px;" class="ember-view dh-pdf-js-image"><!----><!----><canvas class="pdf-js-img-canvas" height="1584" width="1224" style="position: relative; left: 0px; top: 0px; height: 1267px; width: 979px;"></canvas></div>
+
+<!---->
+      <div id="ember1421" style="" class="ember-view dh-page-text-wrap"><!----></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->  </div>
+    <div id="ember1430" style="left: 1039.2px;" class="ember-view dh-comment-panel"><!----></div>
+</div>
+  </div>
+  </div>
+  <input id="ember1431" style="touch-action: manipulation; -ms-touch-action: manipulation;" type="text" class="ember-view ember-text-field dh-hidden-tab-receiver">
+
+<!---->
+
+<textarea id="ember1440" style="touch-action: manipulation; -ms-touch-action: manipulation;" class="ember-view dh-hidden-input"><!---->
+</textarea></div>
+
+<div id="ember1449" style="" class="ember-view label label-default dh-page-number-label">Page 1 of 1</div>
+
+<!---->
+<!---->
+</div>
+
+<!---->  </div>
+  
+</div>
+
+
+<!---->
+<div id="ember678" style="" class="ember-view dh-async-download fadeout"><div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">Preparing Documents</h4>
+  </div>
+  <div class="panel-body text-center">
+    <h2>
+        <i class="fa fa-check-circle"></i>
+    </h2>
+  </div>
+</div>
+</div>
+</div><div id="dom_ruler-text_measurer" style="position: absolute; left: -10010px; top: -10px; width: 10000px; height: 0px; overflow: hidden; visibility: hidden;"><div style=""></div></div></body></html>

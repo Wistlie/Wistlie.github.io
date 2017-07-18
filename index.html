@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtmll/DTD/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	</script>
+	<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+	<title>Shane's Website</title>
+		<style type="text/css">
+			
+
+
+
+			body {
+				
+				background-image:url(shaneWeb.jpg);
+				
+				
+				background-size: cover;
+			
+			
+			}
+			
+img{max-width: 100%;}
+/* cycle-slideshow */
+.cycle-slideshow{
+	top: 750px;
+	width: 100%;
+	max-width: 945px;
+	display: block;
+	position absolute;
+	overflow: hidden;
+}
+.cycle-prev, .cycle-next {
+
+	font-size: 200%;
+	color: #FFF;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	z-index: 9999;
+	cursor: pointer;
+	}
+	.cycle-prev {left: 10%;}
+	.cycle-next {right: 10%;}
+	
+	.cycle-pager{
+	width: 100%;
+	position: absolute;
+	top: 20px;
+	text-align: center;
+	z-index: 9999;
+	cursor: pointer;
+	}
+	
+	.cycle-pager span {
+	text-indent: 100%;
+	white-space: nowrap;
+	 width: 10px;
+	 height 10px;
+	 display: inline-block;
+	 border: 1px solid #FFF;
+	 border-radius: 50%;
+
+	 }
+	 .cycle-pager .cycle-pager-active {
+	 background: #FFF;}
+	 
+	 
+			#image{
+			position: absolute;
+
+			top: 510px;
+			left: 1420px;
+			}
+			
+			
+			#sign{
+			border: 20px solid white;
+			position: absolute;
+			top: 495px;
+			left: 1200px;
+			width: 250px;
+			z-index:-1;
+			background-color: white;
+			opacity: 0.8;
+			border-radius: 10px;} 
+			
+						
+			#first_blurb{border: 20px solid white;
+			position: absolute;
+			top: 580px;
+			left: 1200px;
+			
+			height: 25px;
+			width: 250px;
+			
+			transition: height 2s;
+			overflow: auto;
+			background-color: white;
+			opacity: 0.8;
+			border-radius: 10px;}
+			
+
+			h1 {color:white;}
+			
+			h4 {background-color: white; width: 1500px;
+			height: 2px;}
+			
+			
+			h2 {color:white;}
+			
+			#resume{
+			
+			
+			width: 250px;
+			border: 20px solid white;
+			position: absolute;
+			top: 100px;
+			left: 1200px;
+			opacity: 0.7;
+			border-radius: 10px;
+			background-color: white;} 
+			
+			
+			#first_blurb:hover{
+			height: 250px;
+			}
+		
+			
+			
+			#myLinks{
+			color: white;
+			border: 20px solid black;
+			position: absolute;
+			top: 1125px;
+			left: 1100px;
+			width: 300px;
+			opacity: 0.7;
+			background-color: black;
+			border-radius: 10px;} 
+
+			
+			#rightFB{
+			position: absolute;
+			top: 17px;
+			left: 1450px;
+			}
+			
+		
+		</style>
+		
+		
+	</head>
+	
+	<body>
+
+		
+		<h2 id="myheading"></h2>
+		<!--<img src="shaneWeb.jpg" height="150"/>  ASK ABOUT IMAGES TOMORROW -->
+
+		<h1>Shane Baden </h1>
+	
+			<div id="rightFB">	<a href="https://www.facebook.com/shane.baden" 
+			title="Contact me through Facebook">
+			<img src="social_facebook_box_blue.png" height="40" width = "40">
+			
+			</a>
+			</div>
+
+			<h4>  </h4>
+	    <h2>	
+			Computer Scientist / Mathematician <br /><br />
+			
+			<br />
+
+			<!--Might make the image, or just use facebook as the link -->
+
+			<!-- Brief contact information about me -->
+		</h2>
+		
+
+		<font face= "Arial">
+		<div id="resume">
+		
+		<strong><em>Qualifications</em> </strong> <br />
+		<hr />
+		Languages learned so far:<br />
+		<hr />
+		Python<br />
+		Java<br />
+		C<br />
+		HTML<br />
+		CSS<br />
+		JavaScript<br />
+		(View some of my <a href= "https://github.com/hutchteaching/201720_csci241_badens"
+			title="Some of my School projects! :)"> projects</a>)
+		<hr/>
+		Personal Skills: <br/>
+		<hr/>
+		Artistic (Check out my <a href= "http://wistlie.daportfolio.com/gallery/968741#2"
+			title="Some of my School projects! :)"> art</a>) <br />
+		Self-motivated<br />
+		Enjoys challenges <br />
+		Creative <br/>
+		Works well in a team<br/> </div>
+		
+		<br />
+		
+	
+		<div id="image">
+			<img src="facebookthing.jpg" height="40" width = "40">
+			
+		</div>
+		
+		<div id="sign" align="justify">
+			<em>By Shane Baden <br/>
+			Written on 7/16/2017</em> 
+		</div>
+		
+		<br/>
+		<div id="first_blurb" align="justify">
+		---> Hey there! Welcome to my website! Here, you can view and learn things about me,
+		such as learn about my hobbies, or my skills! Right now, I've taken a 
+		passion to computer science, and am enjoying the challenges 
+		the come along with it. Some of my hobbies include biking, running,
+		drawing, programming, and my personal favorites 
+		are quidditch and melee, both of which you 
+		can view more about <a href="#quidditch">below!</a> <br />
+		
+	
+		</div>
+
+		
+		
+		<p> </p> <br />
+		
+		<div id="myLinks">
+		<em> <Strong> Personal Hobbies </Strong></em><br/>
+		
+		Perhaps the thing that has driven me to study computer science has been my dedication to melee. Every since I was a kid,
+		playing melee has been the funnest game I've ever played. For those that don't know, melee is a fighting game starring 
+		some famous nintendo characters. Ever since it's release, the scene for the game has been exponentially growing, with fans
+		creating new ways to play and win the game by analyzing the game down to the frame-by-frame data. I was inspired by the dedication,
+		and have joined the fanbase to hopefully one day contribute my coding skills and help develope future melee projects.<br />
+		<hr/>
+		Along with melee, I have found utmost joy playing Quidditch. No, not the flying around by broomstick-in-the-air-version of Quidditch silly, I
+		mean the run-on-land-with-a-broom-stuck-between-your-legs Quidditch we magicless muggles play. I play as a beater, who in the game is a person who throws 
+		balls called bludgers at players to make them temporarily leave the game. This gives my teammates opprotunity to score!
+		Teamwork is essential in this game by the way, since more coordinated teams that blend their players together tend to win more games.
+		I know that isn't much, but you'd like, learn more with this
+		
+		
+		
+		
+		<a href="http://www.nbcrightnow.com/Clip/13150482/quidditch-tournament-at-columbia-park"
+			title="My team is on TV!"> video!</a>
+		</div>
+			<div class="cycle-slideshow"> 
+
+	<span class="cycle-prev">&#9001;</span>
+	<span class="cycle-next">&#9002;</span>
+	<span class="cycle-pager"></span>
+	<img src="images/image1.jpg" alt="Quidditch photo">
+	<img src="images/image3.jpg" alt="Quidditch photo">
+	<img src="images/image(2).jpg" alt="Quidditch photo">
+
+
+</div>
+		
+		<a name="#quidditch"></a>
+		<script src="scroll-finish.js"></script>
+		</font>
+
+	</body>
+	
+	
+
+</html>
